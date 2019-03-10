@@ -150,7 +150,10 @@ li {
 /* SCHEDULE SECTION */
 
 .event-schedule {
-  background-color: rgb(18, 70, 112);
+  background: linear-gradient(rgba(18, 70, 112, 0.88), rgba(18, 70, 112, 0.88)),
+    url("/assets/waves.png");
+  background-size: cover;
+  background-repeat: no-repeat;
   color: white;
   text-align: center;
   padding: 5% 10% 5% 10%;
@@ -167,7 +170,7 @@ li {
 }
 
 .event-schedule-info {
-    max-width: 40%;
+  max-width: 40%;
 }
 
 .event-schedule-item h4 {
@@ -184,6 +187,10 @@ footer {
   color: rgb(94, 94, 94);
   width: 100%;
   bottom: 0;
+}
+
+.footer-emphasis {
+  font-weight: 400;
 }
 
 footer a {
@@ -210,4 +217,41 @@ footer a:hover {
   position: absolute;
   right: 0;
   padding-right: 2rem;
+}
+
+@media only screen and (max-width: 700px) {
+  /* NAV */
+
+  ul {
+    font-size: 0.8rem;
+    padding: 1.3rem 0 0.5rem 1rem;
+  }
+
+  li {
+    padding: 0.8rem;
+  }
+
+  /* EVENT INFO  */
+
+  .event-info {
+    padding: 10% 5% 10% 5%;
+  }
+
+  .info-grid-container {
+    grid-template-columns: 1fr;
+    padding: 0 0 0 0;
+  }
+
+  .second {
+    padding-top: 2rem;
+    grid-column: 1;
+  }
+
+  .event-desc {
+    text-align: left;
+  }
+
+  .event-desc h4 {
+    text-align: left;
+  }
 }
