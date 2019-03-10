@@ -24,36 +24,49 @@ h1 {
 
 h4 {
   font-family: "Lato", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1rem;
 }
 
 /* NAV */
 
-nav {
+ul {
   font-family: "Lato", sans-serif;
-  font-weight: 200;
+  font-weight: 300;
   font-size: 1rem;
   background-color: #021a2e;
   color: #fff;
   width: 100%;
-  height: 3rem;
+  height: 3.5rem;
   position: sticky;
   top: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  padding: 1rem 0 1rem 1rem;
 }
 
 li {
+  display: inline;
+  padding: 1rem;
+}
+
+.nav-item {
   color: #fff;
   text-decoration: none;
 }
 
-li .a:visited {
-    color: #fff;
-    text-decoration: none;
-  }
+.nav-item:visited {
+  color: #fff;
+  text-decoration: none;
+}
 
-li:hover {
+.nav-item:hover {
   text-decoration: underline;
+}
+
+.home-link {
+  color: rgb(19, 113, 177) !important;
 }
 
 /* HERO SECTION */
@@ -61,14 +74,34 @@ li:hover {
 .hero {
   background-color: rgb(18, 70, 112);
   color: white;
+  height: 93vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .hero-info-container {
-  height: 30%;
-  width: 30%;
-  text-align: center;
+  height: 23rem;
+  width: 23rem;
   align-self: center;
   background-color: #062036;
+}
+
+.hero-info-container h4 {
+  padding-top: 1rem;
+}
+
+.hero-info-container .date {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+
+.divider {
+  height: 0.2rem;
+  width: 10rem;
+  background-color: #fff;
+  margin: 1rem 6rem 0 6rem;
 }
 
 /* EVENT INFO SECTION */
@@ -81,6 +114,7 @@ li:hover {
 .event-info h4 {
   color: #777777;
   padding-bottom: 2rem;
+  font-weight: 400;
 }
 
 .event-info h1 {
@@ -91,14 +125,15 @@ li:hover {
 
 .event-desc {
   padding-top: 4rem;
+  text-align: center;
 }
 
 .event-desc h4 {
-    text-align: center;
+  text-align: center;
 }
 
 .info-grid-container {
-    padding: 0 5% 0 5%;
+  padding: 0 5% 0 5%;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 1rem;
@@ -114,10 +149,65 @@ li:hover {
 
 /* SCHEDULE SECTION */
 
-.hero {
-    background-color: rgb(18, 70, 112);
-    color: white;
-    text-align: center;
-  }
+.event-schedule {
+  background-color: rgb(18, 70, 112);
+  color: white;
+  text-align: center;
+  padding: 5% 10% 5% 10%;
+}
+
+.event-schedule h4 {
+  padding-bottom: 2rem;
+  font-weight: 400;
+}
+
+.event-schedule-item {
+  display: flex;
+  justify-content: center;
+}
+
+.event-schedule-info {
+    max-width: 40%;
+}
+
+.event-schedule-item h4 {
+  font-weight: 300;
+}
 
 /* FOOTER */
+
+footer {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 1rem;
+  background-color: #fff;
+  color: rgb(94, 94, 94);
+  width: 100%;
+  bottom: 0;
+}
+
+footer a {
+  color: rgb(19, 113, 177);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.footer-content {
+  padding: 1rem 2rem 2rem 2rem;
+  justify-content: center;
+}
+
+.copyright {
+  position: absolute;
+  left: 0;
+  padding-left: 2rem;
+}
+
+.contact {
+  position: absolute;
+  right: 0;
+  padding-right: 2rem;
+}
