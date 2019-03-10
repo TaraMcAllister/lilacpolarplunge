@@ -254,4 +254,37 @@ footer a:hover {
   .event-desc h4 {
     text-align: left;
   }
+
+  /* SCHEDULE SECTION */
+
+.event-schedule {
+    padding: 10% 5% 10% 5%;
+  }
+  
+  
+  .event-schedule-item {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .event-schedule-info {
+    max-width: 70%;
+  }
+
+  /* FOOTER  */
+
+  .footer-content {
+    padding: 1rem 2rem 1rem 2rem;
+  }
+
+.copyright {
+    position: initial;
+    padding-left: 0rem;
+  }
+  
+  .contact {
+    position: initial;
+    padding-top: 1rem;
+  }
+  
 }
