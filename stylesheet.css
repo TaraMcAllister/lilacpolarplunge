@@ -72,13 +72,14 @@ li {
 /* HERO SECTION */
 
 .hero {
-  background-color: rgb(18, 70, 112);
-  color: white;
   height: 93vh;
   width: 100vw;
   display: flex;
   justify-content: center;
   text-align: center;
+  background: linear-gradient(rgba(18, 70, 112, 0.88), rgba(18, 70, 112, 0.88)),
+  url("assets/waves.png");
+  color: white;
 }
 
 .hero-info-container {
